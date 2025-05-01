@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <title>AI ChatBot</title>
+</head>
+
+<body>
+  <button id="chatbot-toggler">
+    <span class="material-symbols-rounded">mode_comment</span>
+    <span class="material-symbols-rounded">close</span>
+  </button>
+  <div class="chatbot-popup">
+    <!-- Chatbot Header -->
+    <div class="chat-header">
+      <div class="header-info">
+        <i class="bi bi-robot"></i>
+        <div class="logo-text">ChatBot</div>
+      </div>
+      <button id="close-chatbot" class="material-symbols-rounded">keyboard_arrow_down</button>
+    </div>
+
+    <!-- Chatbot Body -->
+    <div class="chat-body">
+      <div class="message bot-message">
+        <i class="bi bi-robot"></i>
+        <div class="message-text">
+          Hey there, <br>How can I help you today?
+        </div>
+      </div>
+
+      <!-- <div class="message user-message">
+        <div class="message-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, perferendis.
+        </div>
+      </div>
+      <div class="message bot-message thinking">
+        <i class="bi bi-robot"></i>
+        <div class="message-text">
+          <div class="thinking-indicator">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+
+    <!-- Chatbot Footer -->
+    <div class="chat-footer">
+      <form action="#" class="chat-form">
+        <textarea placeholder="Message.." class="message-input" required></textarea>
+        <div class="chat-controls">
+          <button type="button" id="emoji-picker" class="material-symbols-rounded">sentiment_satisfied</button>
+
+          <div class="file-upload-wrapper">
+            <input type="file" accept="images/*" id="file-input" hidden>
+            <img src="#">
+            <button type="button" id="file-upload" class="material-symbols-rounded">attach_file</button>
+            <button type="button" id="file-cancel" class="material-symbols-rounded">close</button>
+          </div>
+
+          <button type="submit" id="send-message" class="material-symbols-rounded">arrow_upward</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <!-- Linking emoji mart script for emoji picker -->
+  <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
